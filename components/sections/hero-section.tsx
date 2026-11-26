@@ -2,11 +2,12 @@ export default function HeroSection() {
   return (
     <section className=" w-full h-screen  rounded-b-[5%] bg-gray-200">
       <div className="container mx-auto relative w-full h-full text-gray-800 grid place-items-center">
-        <div>
-          <h2 className=" uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold mb-2">
+        <div className=" space-y-2 text-center">
+          <p> 👋 Hi, I'm Htet Myat Aung</p>
+          <h2 className=" uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">
             Frontend <span className="hidden md:inline">Developer</span>
           </h2>
-          <h2 className="  md:hidden uppercase text-4xl md:text-2xl lg:text-5xl text-center font-bold">
+          <h2 className="  md:hidden uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">
             Developer
           </h2>
         </div>
