@@ -1,3 +1,5 @@
+import { Button } from "@base-ui/react";
+
 export default function HeroSection() {
   return (
     <section className=" w-full h-screen  rounded-b-[5%] bg-gray-200">
@@ -10,6 +12,14 @@ export default function HeroSection() {
           <h2 className="  md:hidden uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">
             Developer
           </h2>
+          <div className=" space-x-3 mt-5">
+            <Button className={" px-5 py-2 rounded-full border"}>
+              Projects
+            </Button>
+            <Button className={" px-5 py-2 rounded-full border"}>
+              Contact
+            </Button>
+          </div>
         </div>
         <div className="  absolute bottom-8 text-center w-full space-y-2">
           <h4 className=" lg:text-lg font-medium">Based in Yangon, Myanmar.</h4>
