@@ -2,8 +2,8 @@ import { Button } from "@base-ui/react";
 
 export default function HeroSection() {
   return (
-    <section className=" w-full h-screen  rounded-b-[5%] bg-gray-200">
-      <div className="container mx-auto relative w-full h-full text-gray-800 grid place-items-center">
+    <section className=" w-full h-screen  rounded-b-[5%] old-news-bg">
+      <div className="container mx-auto relative w-full h-full text-midnight grid place-items-center">
         <div className=" space-y-2 text-center">
           <p> 👋 Hi, I'm Htet Myat Aung</p>
           <h2 className=" uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">

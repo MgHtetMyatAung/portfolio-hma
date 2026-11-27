@@ -1,10 +1,13 @@
 @import "tailwindcss";
 @import "@fontsource-variable/google-sans-flex";
 @import "@fontsource-variable/noto-sans-myanmar";
+@import "./app.css";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1c1a;
+  --primary: #f2f3f3;
+  --secondary: #1f1f1f;
 }
 
 @theme inline {
@@ -15,11 +18,13 @@
   --font-myanmar:
     "Noto Sans Myanmar Variable", "Google Sans Flex Variable", sans-serif;
   --font-mono: var(--font-geist-mono);
+  --color-old-news: var(--primary);
+  --color-midnight: var(--secondary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1c1a;
     --foreground: #ededed;
   }
 }
@@ -33,13 +38,4 @@ body {
 
 .root {
   isolation: isolate;
-}
-
-/* for cursor  */
-
-@media (hover: hover) and (pointer: fine) {
-  .has-global-mask-cursor,
-  .has-global-mask-cursor * {
-    cursor: none !important;
-  }
 }

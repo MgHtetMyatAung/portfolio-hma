@@ -175,6 +175,9 @@ importers:
       '@fontsource-variable/noto-sans-myanmar':
         specifier: ^5.3.0
         version: 5.3.0
+      '@gsap/react':
+        specifier: ^2.1.2
+        version: 2.1.2(gsap@3.15.1)(react@19.3.0)
       '@hugeicons/react':
         specifier: ^1.1.10
         version: 1.1.10(react@19.3.0)
@@ -392,6 +395,12 @@ packages:
 
   '@fontsource-variable/noto-sans-myanmar@5.3.0':
     resolution: {integrity: sha512-DQEfyCSwJkPdUMoopCCZkHPCgN2VtEEsQ4lZCpadlotCvJUjM4AyaDvqQsmk52/upS2XbxZfS1+wDV00H7T/TA==}
+
+  '@gsap/react@2.1.2':
+    resolution: {integrity: sha512-JqliybO1837UcgH2hVOM4VO+38APk3ECNrsuSM4MuXp+rbf+/2IG2K1YJiqfTcXQHH7XlA0m3ykniFYstfq0Iw==}
+    peerDependencies:
+      gsap: ^3.12.5
+      react: '>=17'
 
   '@hugeicons/react@1.1.10':
     resolution: {integrity: sha512-9tAsd92yMVVGP+E+d8cM+wc0VnXuYZHNbWQi7TOe8k2neawmhiaFmVFbzyruejhOMa197/LbgvSED32ayUo3ZA==}
@@ -2490,6 +2499,11 @@ snapshots:
   '@fontsource-variable/google-sans-flex@5.3.2': {}
 
   '@fontsource-variable/noto-sans-myanmar@5.3.0': {}
+
+  '@gsap/react@2.1.2(gsap@3.15.1)(react@19.3.0)':
+    dependencies:
+      gsap: 3.15.1
+      react: 19.3.0
 
   '@hugeicons/react@1.1.10(react@19.3.0)':
     dependencies:
