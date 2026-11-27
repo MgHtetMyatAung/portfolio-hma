@@ -5,7 +5,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1c1a;
+  --foreground: #1f1f1f;
   --primary: #f2f3f3;
   --secondary: #1f1f1f;
 }
@@ -24,7 +24,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1a1c1a;
+    --background: #1f1f1f;
     --foreground: #ededed;
   }
 }
@@ -38,4 +38,30 @@ body {
 
 .root {
   isolation: isolate;
+}
+
+@utility container {
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: 1rem;
+
+  @variant sm {
+    max-width: 640px;
+  }
+
+  @variant md {
+    max-width: 768px;
+  }
+
+  @variant lg {
+    max-width: 1024px;
+  }
+
+  @variant xl {
+    max-width: 1200px;
+  }
+
+  @variant 2xl {
+    max-width: 1440px;
+  }
 }
