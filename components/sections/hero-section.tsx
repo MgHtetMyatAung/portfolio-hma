@@ -2,6 +2,7 @@ import { Button } from "@base-ui/react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowRight01Icon } from "@hugeicons/core-free-icons";
 import Link from "next/link";
+import MagneticText from "../animations/magnetic-text";
 
 export default function HeroSection() {
   return (
@@ -10,10 +11,16 @@ export default function HeroSection() {
         <div className=" grow grid place-items-center ">
           <div className="space-y-5 text-center">
             <p> 👋 Hi, I'm Htet Myat Aung</p>
-            <h2 className=" uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">
-              Tech Stack <span className="hidden md:inline">Power</span>
+            <h2 className=" uppercase text-5xl md:text-4xl lg:text-5xl  xl:text-7xl font-bold">
+              <span>Frontend</span>{" "}
+              <MagneticText
+                className="text-gray-600 text-start"
+                cursorText="Engineer"
+              >
+                Developer
+              </MagneticText>
             </h2>
-            <h2 className="  md:hidden uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">
+            <h2 className=" text-gray-600 md:hidden uppercase text-5xl md:text-4xl lg:text-5xl xl:text-7xl text-center font-bold">
               Developer
             </h2>
             <div className=" mt-5">

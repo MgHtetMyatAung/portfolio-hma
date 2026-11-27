@@ -1,3 +1,5 @@
+import MagneticText from "../animations/magnetic-text";
+
 export default function AboutSection() {
   return (
     <section className="min-h-screen container py-10 text-old-news">
@@ -7,7 +9,10 @@ export default function AboutSection() {
         </h2>
         <div className=" flex items-center gap-3">
           <div className=" w-10 h-0.5 bg-old-news rounded"></div>
-          <h3 className=" uppercase">Since 2021</h3>
+          <h3 className=" uppercase">
+            <span className=" md:hidden">Since 2021</span>
+            <MagneticText cursorText="Still 2026">Since 2021</MagneticText>
+          </h3>
         </div>
       </div>
     </section>
